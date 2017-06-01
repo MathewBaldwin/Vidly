@@ -212,15 +212,57 @@
     <Compile Include="Migrations\201705111802194_PopulateMembershipTypes.Designer.cs">
       <DependentUpon>201705111802194_PopulateMembershipTypes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201705111819409_ApplyAnnotationsToCustomerName.cs" />
+    <Compile Include="Migrations\201705111819409_ApplyAnnotationsToCustomerName.Designer.cs">
+      <DependentUpon>201705111819409_ApplyAnnotationsToCustomerName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201705250105101_updated columns.cs" />
+    <Compile Include="Migrations\201705250105101_updated columns.Designer.cs">
+      <DependentUpon>201705250105101_updated columns.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201705250109500_Remove column round2.cs" />
+    <Compile Include="Migrations\201705250109500_Remove column round2.Designer.cs">
+      <DependentUpon>201705250109500_Remove column round2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201705250124436_AddNameToMembershipType.cs" />
+    <Compile Include="Migrations\201705250124436_AddNameToMembershipType.Designer.cs">
+      <DependentUpon>201705250124436_AddNameToMembershipType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201705250132143_SetNameOfMembershipTypes.cs" />
+    <Compile Include="Migrations\201705250132143_SetNameOfMembershipTypes.Designer.cs">
+      <DependentUpon>201705250132143_SetNameOfMembershipTypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201705251350097_AddBirthdateToCustomer.cs" />
+    <Compile Include="Migrations\201705251350097_AddBirthdateToCustomer.Designer.cs">
+      <DependentUpon>201705251350097_AddBirthdateToCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201705251401138_TryingToFixError.cs" />
+    <Compile Include="Migrations\201705251401138_TryingToFixError.Designer.cs">
+      <DependentUpon>201705251401138_TryingToFixError.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201705251421276_AddMovie.cs" />
+    <Compile Include="Migrations\201705251421276_AddMovie.Designer.cs">
+      <DependentUpon>201705251421276_AddMovie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201705251430463_Genres.cs" />
+    <Compile Include="Migrations\201705251430463_Genres.Designer.cs">
+      <DependentUpon>201705251430463_Genres.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201705251544481_Updates to views.cs" />
+    <Compile Include="Migrations\201705251544481_Updates to views.Designer.cs">
+      <DependentUpon>201705251544481_Updates to views.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MembershipType.cs" />
     <Compile Include="Models\Movie.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="ViewModels\NewCustomerViewModel.cs" />
     <Compile Include="ViewModels\RandomMovieViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -286,6 +328,8 @@
     <Content Include="Views\Customers\Index.cshtml" />
     <Content Include="Views\Movies\Index.cshtml" />
     <Content Include="Views\Customers\Details.cshtml" />
+    <Content Include="Views\Movies\Details.cshtml" />
+    <Content Include="Views\Customers\CustomerForm.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -317,6 +361,36 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201705111802194_PopulateMembershipTypes.resx">
       <DependentUpon>201705111802194_PopulateMembershipTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705111819409_ApplyAnnotationsToCustomerName.resx">
+      <DependentUpon>201705111819409_ApplyAnnotationsToCustomerName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705250105101_updated columns.resx">
+      <DependentUpon>201705250105101_updated columns.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705250109500_Remove column round2.resx">
+      <DependentUpon>201705250109500_Remove column round2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705250124436_AddNameToMembershipType.resx">
+      <DependentUpon>201705250124436_AddNameToMembershipType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705250132143_SetNameOfMembershipTypes.resx">
+      <DependentUpon>201705250132143_SetNameOfMembershipTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705251350097_AddBirthdateToCustomer.resx">
+      <DependentUpon>201705251350097_AddBirthdateToCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705251401138_TryingToFixError.resx">
+      <DependentUpon>201705251401138_TryingToFixError.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705251421276_AddMovie.resx">
+      <DependentUpon>201705251421276_AddMovie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705251430463_Genres.resx">
+      <DependentUpon>201705251430463_Genres.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705251544481_Updates to views.resx">
+      <DependentUpon>201705251544481_Updates to views.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
